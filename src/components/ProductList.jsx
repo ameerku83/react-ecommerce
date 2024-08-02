@@ -35,6 +35,7 @@ const ProductList = () => {
         <Link to={"/cart"}>carty</Link>
       
        <div>
+        
         <Row>
         {  products.length===0 ?
         
@@ -58,6 +59,7 @@ const ProductList = () => {
               <Card.Body>
                 <Card.Title>{  product.title || <Skeleton/>}</Card.Title>
                 <Card.Text>${product.price}</Card.Text>
+                <div className='d-md-flex gap-2' >
                 <Link to={`/product/${product.id}`}>
                   <Button variant="warning">Bay Now </Button>
                 </Link>
@@ -68,6 +70,7 @@ const ProductList = () => {
                 >
                   Add to Cart
                 </Button>
+                </div>
               </Card.Body>
             </Card>
           </Col>
