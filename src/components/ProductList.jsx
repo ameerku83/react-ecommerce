@@ -68,7 +68,7 @@ const ProductList = () => {
                   className="ms-2"
                   onClick={() => addToCart(product)}
                 >
-                  Add to Cart
+                  Add To Cart
                 </Button>
                 </div>
               </Card.Body>
